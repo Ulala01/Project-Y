@@ -136,6 +136,10 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+              <div className="attribute" id="down">
+              <span>Built with ❤️ by <a href="https://github.com/tsaxena4k" target="_blank">Tushar Saxena</a>.</span>
+            </div>
+            <a href="!#" >Join</a>
             </div>
           </div>
         </div>
