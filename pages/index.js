@@ -102,6 +102,32 @@ export default function Home() {
                           <h3 className="content1">{result.isp}</h3>
                         </div></>}
                   </div>
+                  <div className="card shadow collapse show" id="collapseExample">
+                  <div className="card-body row">
+                    {load == 1 ?
+                      <div style={{width:'100%',display:'flex',justifyContent:'center',zIndex:'9999'}}>
+                        <div className="spinner-border text-dark text-center" role="status">
+                          <span className="sr-only">Loading...</span>
+                        </div>
+                      </div>
+                      :
+                      <><div className="card-element col-md-3">
+                        <h6>IP ADDRESS</h6>
+                        <h3 className="content1">{result.ip}</h3>
+                      </div>
+                        <div className="card-element col-md-3">
+                          <h6>LOCATION</h6>
+                          <h3 className="content1">{`${result.location.region}, ${result.location.city} ${result.location.postalCode}`}</h3>
+                        </div>
+                        <div className="card-element col-md-3">
+                          <h6>TIME ZONE</h6>
+                          <h3 className="content1">{`UTC${result.location.timezone}`}</h3>
+                        </div>
+                        <div className="card-element col-md-3">
+                          <h6>ISP</h6>
+                          <h3 className="content1">{result.isp}</h3>
+                        </div></>}
+                  </div>
                 </div>
                 <div className="card minimizer">
                   <div className="ml-2 card-body text-center">
